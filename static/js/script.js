@@ -1,5 +1,4 @@
 // Challenge1- Age In Days
-
 function ageInDays(){
     var birthYear = prompt('Which year were you born?');
     var noofdays = (2020 - birthYear) * 365;
@@ -12,6 +11,7 @@ function ageInDays(){
 function reset(){
     document.getElementById("ageInDays").remove();
 }
+
 // Challenge2: Cat Generator
 function generateCat(){
     var image = document.createElement('img');
@@ -19,3 +19,5 @@ function generateCat(){
     image.src = "http://thecatapi.com/api/images/get?format=src&type=gif&size=small";
     div.appendChild(image);
 }
+
+// Challenge3: Rock, Paper, Scissors
