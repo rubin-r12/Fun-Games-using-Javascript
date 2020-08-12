@@ -24,7 +24,7 @@ function generateCat(){
 function rpsGame(yourChoice){
     var humanChoice, botChoice;
     humanChoice = yourChoice.id;
-    botChoice = numberToChoice(randToRpsInt());
+    botChoice = numberToChoice(randToRpsInt(3));
     console.log('Computer Choice: ',botChoice);
     results = decideWinner(humanChoice, botChoice);
     console.log(results);
@@ -32,8 +32,8 @@ function rpsGame(yourChoice){
     rpsFrontEnd(yourChoice.id, botChoice, message)
 }
 
-function randToRpsInt(){
-    return Math.floor(Math.random() * 3);
+function randToRpsInt(num){
+    return Math.floor(Math.random() * num);
 }
 
 function numberToChoice(number){
@@ -136,10 +136,7 @@ function buttonColorReset() {
 function randomColors() {
     for(let i=0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
-        all_buttons[i].classList.add(copyAllButtons[randomNumberGenerator()]);
+        all_buttons[i].classList.add(copyAllButtons[randToRpsInt(7)]);
     }
 }
 
-function randomNumberGenerator(){
-    return Math.floor(Math.random() * 7);
-}
