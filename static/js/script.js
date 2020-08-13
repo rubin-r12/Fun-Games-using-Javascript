@@ -142,7 +142,7 @@ function randomColors() {
 
 //Challenge 5: BlackJack
 let blackjackGame = {
-    'you': {'scoreSpan': "your-blackjack-result", 'div': '#your-box','score': 0},
+    'you': {'scoreSpan': "#your-blackjack-result", 'div': '#your-box','score': 0},
     'dealer': {'scoreSpan': "dealer-blackjack-result", 'div': '#dealer-box','score': 0},
     'cards': ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'],
     'cardsMap': {'2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10, 'A': [1, 11]},
@@ -205,8 +205,5 @@ function updateScore(card, activePlayer) {
 }
 
 function showScore(activePlayer) {
-    var element = document.querySelector(activePlayer['scoreSpan'])
-    if (element) {
-        element.textContent = activePlayer['score'];
-    }
+    document.querySelector(activePlayer['scoreSpan']).innerHTML = activePlayer['score'];
 }
