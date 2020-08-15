@@ -1,18 +1,18 @@
 # Fun-Games-using-Javascript
 > ## *Good Game, Have Fun!*
-![image](static/images/age.png)
+![image](https://ibb.co/qpn4v2T)
 
 ---
-![image](static/images/cat.png)
+![image](https://ibb.co/6b26nFj)
 
 ---
-![image](static/images/rps.png)
+![image](https://ibb.co/N74YRQL)
 
 ---
-![image](static/images/buttons.png)
+![image](https://ibb.co/CPdv2FN)
 
 ---
-![image](static/images/blackjack.png)
+![image](https://ibb.co/fDYt8d0)
 
 ---
 ---
